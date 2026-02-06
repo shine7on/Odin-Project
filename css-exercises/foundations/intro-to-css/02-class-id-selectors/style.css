@@ -1,1 +1,28 @@
-/* Add CSS Styling */
+/*All odd numbered elements: 
+a light red/pink background, and a list of fonts containing Verdana 
+and DejaVu Sans with sans-serif as a fallback */
+
+p {
+    background-color: lightpink;
+    font-family: Verdana, DejaVu Sans, sans-serif;
+}
+
+/* The second element: blue text and a font size of 36px */
+#two {
+    color: blue;
+    font-size: 36px;
+}
+
+.midsize {
+    font-size: 24px;
+}
+
+#four {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+
+
+
+
