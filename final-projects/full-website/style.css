@@ -6,9 +6,15 @@ body {
     flex-grow: 1;
 }
 
-.container {
+.container, footer {
     background-color: rgb(20, 29, 47);
     width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 .textcontainer {
@@ -37,11 +43,10 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
 
-li {
-    display: inline;
-    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 a {
@@ -56,25 +61,101 @@ a {
     color: white;
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .maintitle {
     font-size: 36px;
     font-weight: 900;
-    margin-left: 300px
 }
 
-button {
-    color: white;
-    background-color: #2ad3bad3;
-    padding: 8px;
-    font-size: 18px;
-    font-style: bold;
-
-    border-radius: 8px;
+.leftmain, .rightmain {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 .rightmain {
     background-color: grey;
     color: white;
 }
+
+
+button {
+    color: white;
+    background-color: #2ad3bad3;
+    padding: 8px;
+    width: 20%;
+    font-size: 18px;
+    font-style: bold;
+
+    border-radius: 8px;
+}
+
+.randominfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    max-width: 70%;
+    background-color: white;
+    color: navy;
+}
+
+.randomtitle {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+.randomimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imageholder {
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 10px;
+}
+
+.imageset {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.quote {
+    background-color: rgb(214, 214, 214);
+}
+
+.quotetexts {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding: 30px;
+
+    color: rgb(58, 58, 59);
+}
+
+.quotetext {
+    font-size: 30px;
+    font-family: serif;
+    font-style: italic;
+    margin-top: 40px;
+}
+
+.author {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: right;
+}
+
